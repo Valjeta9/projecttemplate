@@ -1,0 +1,791 @@
+<DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aqua Suites</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="images/logo.png" alt="" height=55px style="padding-bottom:10px">
+      </div>
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="#home">home</a> </li>
+          <li><a href="#about">about</a> </li>
+          <li><a href="#rooms">rooms</a> </li>
+          <li><a href="#pages">pages</a> </li>
+          <li><a href="#news">news</a> </li>
+          <li><a href="#contact">contact</a> </li>
+          <li> <i class="fa fa-search"></i> </li>
+          <li> <button class="primary-btn">BOOK NOW</button> </li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+
+  <section class="home">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="images/banner-1.jpg" alt="">
+          <div class="text">
+            <h1>Spend Your Holiday</h1>
+            <p style="color:white; opacity:50%">Create unforgettable memories this holiday season. Book your escape today!</p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/banner-2.png" alt="">
+          <div class="text">
+            <h1>Spend Your Holiday</h1>
+            <p style="color:white; opacity:50%">Experience the perfect blend of adventure and relaxation this holiday!</p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/banner-3.png" alt="">
+          <div class="text">
+            <h1>Spend Your Holiday</h1>
+            <p style="color:white; opacity:50%">Make this holiday unforgettable—your escape starts here!</p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+
+  <section class="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h1> <span>Book </span> Your Rooms </h1>
+      </div>
+      <div class="form">
+        <form class="grid">
+          <input type="date" placeholder="Araival Date">
+          <input type="date" placeholder="Departure Date">
+          <input type="number" placeholder="Adults">
+          <input type="number" placeholder="Children">
+          <input type="submit" value="CHECK AVAILABILITY">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="about top">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <h1>WELCOME</h1>
+          <h2>Aqua Suites</h2>
+        </div>
+        <p>Welcome to Aqua Suites, your perfect escape in Dhermi. Nestled along the stunning Albanian Riviera, our hotel is designed to be a haven of tranquility and luxury. Each of our modern rooms and suites is meticulously crafted to offer premium comfort and style, featuring elegant decor, plush furnishings, and breathtaking views of the surrounding landscape.</br></br>
+
+Our dedicated staff is committed to ensuring that your stay is nothing short of memorable. From the moment you arrive, you'll experience exceptional service that caters to your every need, making you feel right at home.</br></br>
+
+Indulge your senses with our delicious dining options, where you can savor a variety of local and international cuisines, all prepared with the freshest ingredients. Whether you're enjoying a romantic dinner on our terrace or a casual meal by the pool, our culinary offerings are sure to delight.</br></br>
+
+For those looking to unwind, our spa provides a serene retreat, offering a range of rejuvenating treatments designed to relax both body and mind. Take a break from your busy schedule and indulge in our signature massages, facials, and wellness therapies.</br></br>
+        <button class="primary-btn">ABOUT US</button>
+      </div>
+      <div class="right">
+        <img src="images/about.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="counter top">
+    <div class="container grid">
+      <div class="box">
+        <h1>2500</h1>
+        <hr>
+        <span>Customer</span>
+      </div>
+      <div class="box">
+        <h1>1250</h1>
+        <hr>
+        <span>Happy Customer</span>
+      </div>
+      <div class="box">
+        <h1>150</h1>
+        <hr>
+        <span>Expert Technicians</span>
+      </div>
+      <div class="box">
+        <h1>3550</h1>
+        <hr>
+        <span>Desktop Reaired</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="rooms">
+    <div class="container top">
+      <div class="heading">
+        <h1>EXPOLRE</h1>
+        <h2>Our Rooms</h2>
+        <h4>Discover the perfect space for your stay.</h4>
+        <p>Each room offers a unique blend of comfort and luxury, carefully designed to provide a memorable experience.</p>
+      </div>
+
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div class="items">
+            <div class="image">
+              <img src="images/room-1.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Deluxe Double Room</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Experience the ultimate in luxury and relaxation in our deluxe spacious room features rustic and elegant decor, 
+			  providing you with the perfect ambiance to unwind and enjoy the natural beauty of the surroundings.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$350 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Double Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Soaring ceilings, hardwood floors and a rich indigenous-inspired color palette of persimmon,
+			  white and warm colors make this suite feel like an elegant beach home. A spaceful home designed to make you feel comfortable.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$365 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-3.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Junior Suite</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Grab your loved ones and gift them an incredible memory at our Junior Suite.
+				Need a moment to yourself?
+				Step into your room’s private balcony, overlooking our inner village below and take a deep breath
+				of relaxation.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$370 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-4.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Superior King Room</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Experience a blend of elegance and comfort in our Superior King Room, designed to offer a tranquil escape. With a king-sized bed,
+				modern decor, you’ll enjoy a serene stay with all the amenities you need to relax and rejuvenate.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$480 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-5.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Family Suite</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Perfect for families, this spacious suite features two separate bedrooms, each with its own luxurious bed, along with a shared living area.
+				The decor combines warm tones and modern touches with plenty of room for everyone to feel at home.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$490 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-6.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Garden View Room</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Garden View Room offers a tranquil escape with direct views of our beautifully manicured gardens. Designed with earthy tones and natural textures, 
+				this room creates a relaxing atmosphere where you can unwind and enjoy the calming sights.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$500 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-7.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Double Sea View</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Waking up to the marvellous view of the Ionian water may be the experience you need. With its lofty ceilings, 
+			  and a vibrant color scheme and warm tones, this suite exudes the essence of an upscale coastal retreat.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$515 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-8.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Grande Suite</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>The architecture of the suite is inspired by the natural beauty of the surrounding landscape, 
+			  featuring warm wood tones, natural stone accents, and exposed ceiling beams that create a cozy and inviting atmosphere
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$550<span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 10,
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="gallery">
+    <div class="container top">
+      <div class="heading">
+        <h1>PHOTOS</h1>
+        <h2>Our Gallery</h2>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      </div>
+    </div>
+
+    <div class="content mtop">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-1.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Sacred Spiritual Haven</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-2.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Stone House</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-3.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Elegant Bathroom Oasis</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-4.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Breathtaking Ocean Vista</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-5.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Spacious Family Retreat</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-6.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Scenic Ocean Oasis</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-2.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Breathtaking Ocean Vista</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-3.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Elegant Bathroom Oasis</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-1.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Sacred Spiritual Haven</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallery-4.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Photo Title Here.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 4,
+        },
+        1000: {
+          items: 6
+        }
+      }
+    })
+  </script>
+
+
+  <section class="services top">
+    <div class="container">
+      <div class="heading">
+        <h1>SERVICES</h1>
+        <h2>Our Services</h2>
+        <p>Elevate your stay with our exceptional offerings.
+      </div>
+
+
+      <div class="content flex_space">
+        <div class="left grid2">
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <h3>Delicious Food</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-person-biking"></i>
+              <h3>Fitness</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-utensils"></i>
+              <h3>Inhouse Restaurant</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-spa"></i>
+              <h3>Beauty Spa</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="images/service.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="Customer top">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>"Absolutely wonderful experience! I recently stayed at this hotel and was blown away by the exceptional service and stunning accommodations. The room was spacious, beautifully decorated, and offered breathtaking views. I especially enjoyed the relaxing spa services and the friendly staff who went above and beyond to ensure my stay was perfect. 
+		  The location is also fantastic, with easy access to local attractions. I can’t wait to come back and explore more!"</p>
+          <h3>Julia Robertson</h3>
+		  <p></p>
+          <label>Julia Robertson</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>"Perfect getaway! I stayed here for a weekend retreat and it was just what I needed. The atmosphere was serene, and my room had a lovely view of the gardens.
+		  I indulged in the spa services, which were divine! The staff was friendly and helpful, providing great recommendations for local attractions. I’ll definitely be back!"</p>
+          <h3>Ethan Brown</h3>
+          <label>Julia Robertson</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>"Unforgettable experience! I had the pleasure of staying in the penthouse suite, and it was breathtaking.
+			The decor was stunning, and the private terrace was the highlight of my trip. Every detail was perfect, from the comfy bed to the luxurious bathroom.
+		  I can’t praise the staff enough for their hospitality. This place is a must-visit!"</p>
+          <h3>Charlotte White</h3>
+          <label>Julia Robertson</label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1,
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="news top rooms">
+    <div class="container">
+      <div class="heading">
+        <h1>NEWS</h1>
+        <h2>Our News</h2>
+        <p>Stay updated with the latest news and events from Aqua Suites!</p>
+      </div>
+
+
+      <div class="content flex">
+        <div class="left grid2">
+          <div class="items">
+            <div class="image">
+              <img src="images/blog-1.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Rooms with Bar</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Admin</label>
+                <i class="fa fa-heart"></i>
+                <label>500</label>
+                <i class="fa fa-comments"></i>
+				<label>82</label>
+              </div>
+              <p>Experience luxury and convenience in our rooms with an in-suite bar. Each room is elegantly designed, 
+			  featuring a well-stocked mini-bar offering a selection of premium beverages and snacks.
+			  Enjoy the comfort of sipping your favorite drink in the cozy ambiance of your room, whether it's a refreshing cocktail after a long day or a nightcap before bed.</p>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/blog-2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Spa Rooms</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Admin</label>
+                <i class="fa fa-heart"></i>
+                <label>583</label>
+                <i class="fa fa-comments"></i>
+				<label>74</label>
+              </div>
+              <p>Indulge in tranquility in our luxurious spa rooms, designed to offer a serene retreat for relaxation and rejuvenation.
+			  Each room features soothing decor, comfortable furnishings, and a private spa area equipped with premium amenities. 
+			  Enjoy a range of treatments, from massages to facials, all tailored to enhance your well-being.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="box flex">
+            <div class="img">
+              <img src="images/blog-s1.jpg" alt="">
+            </div>
+            <div class="stext">
+              <h2>Relaxing Poolside View</h2>
+              <p>Our pool is the centerpiece of the hotel, surrounded by tall palm trees and lush greenery, creating a serene and tropical ambiance. 
+			  The crystal-clear water reflects the blue sky above, while comfortable loungers line the edges, offering the perfect spot to unwind. </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="images/blog-s2.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Host Your Event with Us</h2>
+              <p>Whether it's a wedding, corporate gathering, or private celebration, our venue offers the perfect blend of elegance and functionality.
+			  With stunning views, customizable spaces, and exceptional service, we ensure your event will be unforgettable.</p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="images/blog-s3.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Family-Friendly Events</h2>
+              <p>Create lasting memories with your loved ones at our family-friendly events! Our venue is designed to accommodate all ages, 
+			  offering fun activities, spacious areas for kids to play,
+			  and a welcoming atmosphere for everyone. Join us for a delightful experience that the whole family will enjoy!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newsletter mtop">
+    <div class="container flex_space">
+      <h1>Subscribe to Our Newsletter</h1>
+      <input type="text" placeholder="Your Email">
+      <input type="text" value="Subscribe">
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container grid">
+      <div class="box">
+        <img src="images/logo.png" alt="" height=55px style="padding-bottom:10px">
+        <p>Welcome to Aqua Suites, your perfect escape in Dhermi. Our modern rooms and suites offer premium comfort, while our dedicated staff ensures a memorable stay. 
+		Enjoy delicious dining options, relax at our spa, or explore nearby attractions. 
+		Whether you're here for leisure or business, we provide the ideal blend of luxury and convenience. Experience the best of Dhermi with us!</p>
+
+        <div class="icon">
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-youtube"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Links</h2>
+        <ul>
+          <li>Company History</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Services</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out—we’d love to hear from you!</p>
+        <i class="fa fa-location-dot"></i>
+        <label>Rruga Perivolo, Dhërmi, pranë Plazhit të Dhërmiut, Rivierë Shqiptare </label> <br>
+        <i class="fa fa-phone"></i>
+        <label> [+383] 044 639 584</label> <br>
+        <i class="fa fa-envelope"></i>
+        <label>infoaqua@gmail.com</label> <br>
+      </div>
+    </div>
+  </footer>
+
+  <div class="legal">
+    <p class="container">Copyright (c) 2024 Aqua Hotel All Rights Reserved.</p>
+  </div>
+  <script>
+		document.querySelector('input[type="text"][placeholder="Your Email"]').addEventListener('input', function() {
+		const email = this.value;
+		if (email.includes('@') && email.includes('.')) {
+			this.style.border = '';  // Email-i duket i saktë
+		} else {
+		this.style.border = '2px solid red';  // Email-i është i pavlefshëm
+  }
+});
+</script>
+
+
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
